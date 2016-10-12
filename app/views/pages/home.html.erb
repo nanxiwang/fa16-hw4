@@ -1,0 +1,40 @@
+<h1>Check out these models!</h1>
+
+<table>
+	<tr>
+		<td>name</td>
+	</tr>
+	<%@cats.each do |c| %>
+		<tr> 
+			<td><%= c.name%></td>
+		</tr>
+	<%end%>
+</table>
+
+<table>
+	<tr>
+		<td>tasks</td>
+		<td>finished</td>
+	</tr>
+	<%@todos.each do |t| %>
+		<tr> 
+			<td><%= todos.tasks%></td>
+			<td><%= todos.finished%></td>
+		</tr>
+	<%end%>
+</table>
+
+<table>
+	<tr>
+		<td>username</td>
+		<td>email</td>
+		<td>age</td>
+	</tr>
+	<%@users.each do |u| %>
+		<tr> 
+			<td><%= u.username%></td>
+			<td><%= u.email%></td>
+			<td><%= u.age%></td>
+		</tr>
+	<%end%>
+</table>
